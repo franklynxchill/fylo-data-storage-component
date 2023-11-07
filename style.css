@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  background: url('images/bg-desktop.png') no-repeat;
+  background-color: hsl(229, 57%, 11%);
+  background-position: bottom;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Left-side {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(228, 56%, 26%);
+  width: 300px;
+  align-items: start;
+  padding: 45px;
+  border-radius: 8px 100px 8px 8px;
+}
+
+.logo img {
+  width: 80%;
+  object-fit: contain;
+}
+
+.input {
+  display: flex;
+  margin-top: 25px;
+}
+
+.input div {
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.middle-side {
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  width: 350px;
+  height: 20px;
+  margin: 15px 0;
+  border-radius: 40px;
+  border: 2px solid hsl(229, 57%, 11%);
+  box-shadow:  145px 0 2px hsl(229, 57%, 11%);
+  position: relative;
+}
+
+.dot {
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 70px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 329px;
+}
+
+.right-side {
+  background-color: hsl(228, 56%, 26%);
+  color: hsl(243, 100%, 93%);
+  width: 550px;
+  padding: 40px 25px;
+  margin-left: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display {
+  background-color: hsl(243, 100%, 93%);
+  color: hsl(229, 57%, 11%);
+  font-size: 35px;
+  font-weight: 700;
+  width: 200px;
+  padding: 20px;
+  border-radius: 9px 9px 9px 9px;
+  position: absolute;
+  top: -55px;
+  right: 30px;
+}
+
+span {
+  color: hsl(229, 7%, 55%);
+  font-size: 16px;
+}
+@media (max-width: 600px){
+  body {
+    font-size: 16px;
+    background: url('images/bg-mobile.png') no-repeat;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .Left-side {
+    width: 370px;
+  }
+  .right-side { 
+    margin-top: 20px;
+    margin-left: 0;
+    width: 370px;
+    text-align: center;
+  }
+  .middle-side {
+    width: 230px;
+    box-shadow:  80px 0 2px hsl(229, 57%, 11%);
+  }
+  .dot {
+    left: 210px;
+  }
+  .display {
+    border-radius: 9px;
+    bottom: -50px;
+    left: 80px;
+    top: unset;
+    right: unset;
+  }
+}
